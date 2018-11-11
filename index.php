@@ -40,4 +40,9 @@ class Vehicle
 $streetRacer = new Vehicle();
 $streetRacer->setGoBehavior(new GoByDrivingBehavior());
 
+$helicopter = new Vehicle();
+$helicopter->setGoBehavior(new GoByFlyingBehavior());
+
 $streetRacer->go();
+echo '<hr>';
+$helicopter->go();
