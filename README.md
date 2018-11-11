@@ -1,4 +1,4 @@
-# strategy pattern example for
+# strategy pattern example php
 https://viblo.asia/p/tim-hieu-strategy-pattern-znmMdy7YGr69
 
 # Regarding to the topic, there is one question that asked:
