@@ -10,10 +10,10 @@ But what if your customer keep changing the requirement? that the annual user wh
 
 Wow, let's add another condition into the update logic. But these things happen all the time, right? you won't know when the customer change the requirements.
 
-Clearly that the **update function** is changed frequency, so you might be want to move the behavior after the update method into another Class which is call `AfterUpdateBehavior` and then `MailingAfterUpdateBehavior` and then `SmsAfterUpdateBehavior`.
+Clearly that the **logic after update** is changed frequency, so you might be want to move the action after the update method into another Class which is call `NotificationBehavior` and then `MailingNotification` and then `SmsNotification`.
 
 Then you will be able to do
-`$this->user->setBehaviorAfterUpdate()` by using `MailingAfterUpdateBehavior` or `SmsAfterUpdateBehavior`
-Then $this->user->notifyAfterUpdate()
+`$this->user->setNotificationMethodAfterUpdate()` by using `MailingNotification` or `SmsNotification`
+Then $this->user->notify()
 
 This is my understanding. Thanks for contributing.
